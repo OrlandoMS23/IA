@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizador de Algoritmos de Pathfinding</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      background: #222;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+    button, select {
+      margin: 5px;
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Visualizador de Algoritmos de Búsqueda</h2>
+
+  <div>
+    <button onclick="iniciarAStar()">A*</button>
+    <button onclick="iniciarDijkstra()">Dijkstra</button>
+    <button onclick="iniciarBFS()">BFS</button>
+    <button onclick="iniciarDFS()">DFS</button>
+    <button onclick="limpiarTablero()">Limpiar</button>
+  </div>
+
+  <div>
+    <label>Terreno:</label>
+    <select onchange="cambiarTerreno(this.value)">
+      <option value="normal">Normal (1)</option>
+      <option value="arena">Arena (3)</option>
+      <option value="agua">Agua (5)</option>
+      <option value="lava">Lava (10)</option>
+      <option value="muro">Muro</option>
+    </select>
+
+    <label>
+      <input type="checkbox" checked onchange="diagonal = this.checked">
+      Movimiento diagonal
+    </label>
+
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
