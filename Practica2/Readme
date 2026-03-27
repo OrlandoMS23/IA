@@ -1,1 +1,51 @@
+Reconocimiento de Dígitos con IA
+Este proyecto implementa un modelo de Deep Learning (CNN) para reconocer números en tiempo real utilizando la cámara web.
 
+Descripción
+El sistema entrena una red neuronal convolucional (CNN) con el dataset MNIST (dígitos del 0 al 9) y permite predecir el número mostrado frente a la cámara.
+
+Estructura del proyecto
+
+Entrenador.py
+Webcam.py
+modelo_mnist_20_epocas.keras
+
+Requisitos
+- Python 3.x  
+- TensorFlow  
+- OpenCV  
+- NumPy  
+
+Instalar dependencias:
+pip install tensorflow opencv-python numpy
+
+Entrenamiento
+Ejecutar:
+python Entrenador.py
+Modificar número de épocas en:
+epocas = 20
+---
+
+Uso
+Ejecutar:
+python Webcam.py
+Seleccionar modelo en:
+nombre_modelo = "modelo_mnist_20_epocas.keras"
+---
+
+Funcionamiento
+
+- Captura de imagen con cámara  
+- Procesamiento (escala de grises y binarización)  
+- Redimensionado a 28x28  
+- Predicción con CNN  
+- Visualización del resultado  
+
+Notas
+- Funciona mejor con números escritos a mano  
+- Puede fallar con números digitales  
+- Se recomienda buena iluminación  
+
+---
+Autor
+Jesús Orlando Martínez Sánchez
