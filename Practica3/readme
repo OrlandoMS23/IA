@@ -1,1 +1,48 @@
+Predicción de Bitcoin con IA (LSTM)
+Este proyecto utiliza una red neuronal LSTM para predecir el precio del Bitcoin usando datos históricos.
 
+Descripción
+El programa descarga datos reales del precio del Bitcoin y entrena un modelo de inteligencia artificial para intentar predecir su comportamiento en el tiempo.
+Se comparan los valores reales contra las predicciones del modelo para evaluar qué tan bien funciona.
+
+Archivos
+practica3.py
+resultados_bitcoin.csv (se genera automáticamente)
+
+Requisitos
+- Python 3
+- TensorFlow
+- NumPy
+- Pandas
+- Matplotlib
+- yfinance
+- scikit-learn
+
+Instalar dependencias:
+pip install tensorflow numpy pandas matplotlib yfinance scikit-learn
+
+Ejecución
+python practica3.py
+
+Funcionamiento
+1. Descarga datos históricos del Bitcoin  
+2. Normaliza los datos  
+3. Crea secuencias para entrenamiento  
+4. Entrena un modelo LSTM  
+5. Realiza predicciones  
+6. Muestra resultados en tabla y gráfica  
+7. Guarda los resultados en un archivo CSV  
+
+Salidas
+- Tabla con valores reales y predicciones  
+- Gráfica comparativa  
+- Archivo resultados_bitcoin.csv  
+
+Notas
+- Cada punto en el tiempo representa un día  
+- El modelo es una aproximación, no predice con exactitud  
+- Se usa aprendizaje supervisado (regresión)
+
+Autor
+
+Jesús Orlando Martínez Sánchez
